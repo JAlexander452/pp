@@ -1,0 +1,16 @@
+float y =0;
+float x =0;
+
+void setup() {
+size(100,100);
+}
+
+void draw() {
+  background (204);
+  if(x<20){ 
+		rect(y+20,40,10,20);
+		rect(y,50,40,30);
+		triangle(y+40,50,y+40,80,y+70,80);
+	y=y+0.5;
+	}
+}
