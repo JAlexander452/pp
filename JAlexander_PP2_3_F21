@@ -1,0 +1,29 @@
+//1. Declare variables
+float y =0;
+float x =0;
+
+//2. Set display size
+void setup() {
+size(100,100);
+}
+
+//3. Draw shape. Increase increment
+void draw() {
+  background (204);
+  if(x<=70 && y==0){  
+		rect(x,y,30,30);
+		x=x+0.5;
+	}
+	else(y<=70 && x=70){
+		rect(x,y,30,30);
+		y=y+0.5;
+	} 
+	else(y=70){
+		rect(x,y,30,30);
+		x=x-0.5;
+	} 
+	else(x>0){
+		rect(x,y,30,30);
+		y=y-0.5;
+	} 
+}
